@@ -1,6 +1,10 @@
 package net.burned_bisquick.tutorial_mod_21;
 
 import com.mojang.logging.LogUtils;
+import net.burned_bisquick.tutorial_mod_21.Item.ModItem;
+import net.minecraft.client.renderer.ItemModelShaper;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,7 +35,7 @@ public class TutorialMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-
+        ModItem.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -45,6 +49,12 @@ public class TutorialMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItem.Athernia);
+            event.accept(ModItem.Athernia_Ingot);
+
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

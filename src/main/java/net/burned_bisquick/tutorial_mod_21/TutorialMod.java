@@ -2,6 +2,7 @@ package net.burned_bisquick.tutorial_mod_21;
 
 import com.mojang.logging.LogUtils;
 import net.burned_bisquick.tutorial_mod_21.Item.ModItem;
+import net.burned_bisquick.tutorial_mod_21.block.Modblocks;
 import net.minecraft.client.renderer.ItemModelShaper;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,7 +37,7 @@ public class TutorialMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItem.register(modEventBus);
-
+        Modblocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,9 +53,15 @@ public class TutorialMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItem.Athernia);
             event.accept(ModItem.Athernia_Ingot);
+            event.accept(ModItem.Ultimatum_Nugget);
+            event.accept(ModItem.Ultimatum_Ingot);
 
         }
-
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(Modblocks.UlTIMATUM_BLOCK);
+            event.accept(Modblocks.RAW_UlTIMATUM);
+            event.accept(Modblocks.RAW_ATHERNIA_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

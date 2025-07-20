@@ -1,4 +1,10 @@
 {
-  "item.tutorialmod.athernia": "Raw Athernia",
-  "item.tutorialmod.athernia_ingot": "Athernia Ingot"
+  "item.tutorialmod.athernia": "Athernia Crystal",
+  "item.tutorialmod.athernia_ingot": "Athernia Ingot",
+  "item.tutorialmod.ultimatum_nugget": "Ultimatum Nugget",
+  "item.tutorialmod.ultimatum_ingot": "Ultimatum Ingot",
+
+  "block.tutorialmod.ultimatum_block": "Ultimatum Block",
+  "block.tutorialmod.raw_ultimatum_block": "Raw Ultimatum Ore",
+  "block.tutorialmod.raw_athernia_block": "Raw Athernia Block"
 }

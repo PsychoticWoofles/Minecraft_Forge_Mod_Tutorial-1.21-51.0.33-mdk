@@ -18,6 +18,12 @@ public class ModItem {
     public static final RegistryObject<Item> Athernia_Ingot = ITEMS.register("athernia_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> Ultimatum_Nugget = ITEMS.register("ultimatum_nugget",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> Ultimatum_Ingot = ITEMS.register("ultimatum_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 

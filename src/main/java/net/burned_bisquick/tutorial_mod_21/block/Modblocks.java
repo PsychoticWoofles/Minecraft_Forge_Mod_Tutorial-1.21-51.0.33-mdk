@@ -2,9 +2,11 @@ package net.burned_bisquick.tutorial_mod_21.block;
 
 import net.burned_bisquick.tutorial_mod_21.Item.ModItem;
 import net.burned_bisquick.tutorial_mod_21.TutorialMod;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,6 +33,14 @@ public class Modblocks {
     public static final RegistryObject<Block> RAW_ATHERNIA_BLOCK = registerBlock("raw_athernia_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> RAW_INFURNIUM_ORE = registerBlock("raw_infurnium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(6,11),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
+
+    public static final RegistryObject<Block> SUSPICIOUS_STONE = registerBlock("suspicious_stone",
+            () -> new DropExperienceBlock(UniformInt.of(6,11),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

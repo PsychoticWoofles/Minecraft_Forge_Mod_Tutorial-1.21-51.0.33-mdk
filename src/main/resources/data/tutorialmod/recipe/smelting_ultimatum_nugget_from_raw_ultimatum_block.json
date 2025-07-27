@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.8,
+  "group": "ultimatum_nugget",
+  "ingredient": {
+    "item": "tutorialmod:raw_ultimatum_block"
+  },
+  "result": {
+    "id": "tutorialmod:ultimatum_nugget"
+}
+
+
+
+
+}

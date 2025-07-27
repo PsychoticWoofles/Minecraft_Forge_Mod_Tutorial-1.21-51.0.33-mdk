@@ -3,8 +3,12 @@
   "item.tutorialmod.athernia_ingot": "Athernia Ingot",
   "item.tutorialmod.ultimatum_nugget": "Ultimatum Nugget",
   "item.tutorialmod.ultimatum_ingot": "Ultimatum Ingot",
-
+  "item.tutorialmod.parsnip": "Parsnip",
   "block.tutorialmod.ultimatum_block": "Ultimatum Block",
   "block.tutorialmod.raw_ultimatum_block": "Raw Ultimatum Ore",
-  "block.tutorialmod.raw_athernia_block": "Raw Athernia Block"
+  "block.tutorialmod.raw_athernia_block": "Raw Athernia Block",
+  "creativetab.tutorialmod.ultimatum_items": "Ultimatum Items >:3",
+  "creativetab.tutorialmod.athernia_items": "Athernia Items :P",
+  "block.tutorialmod.suspicious_stone": "Suspicious Stone",
+  "block.tutorialmod.raw_infurnium_ore": "Raw Infurnium Ore"
 }

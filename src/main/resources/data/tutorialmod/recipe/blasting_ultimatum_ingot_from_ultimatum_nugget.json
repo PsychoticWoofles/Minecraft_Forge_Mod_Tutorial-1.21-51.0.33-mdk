@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 275,
+  "experience": 3.5,
+  "group": "ultimatum_ingot",
+  "ingredient": {
+    "item": "tutorialmod:ultimatum_nugget"
+  },
+  "result": {
+    "id": "tutorialmod:ultimatum_ingot"
+}
+
+
+
+
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 90,
+  "experience": 1.8,
+  "group": "athernia_ingot",
+  "ingredient": {
+    "item": "tutorialmod:athernia"
+  },
+  "result": {
+    "id": "tutorialmod:athernia_ingot"
+}
+
+
+
+
+}

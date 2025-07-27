@@ -1,6 +1,7 @@
 package net.burned_bisquick.tutorial_mod_21;
 
 import com.mojang.logging.LogUtils;
+import net.burned_bisquick.tutorial_mod_21.Item.ModCreativeModeTabs;
 import net.burned_bisquick.tutorial_mod_21.Item.ModItem;
 import net.burned_bisquick.tutorial_mod_21.block.Modblocks;
 import net.minecraft.client.renderer.ItemModelShaper;
@@ -36,6 +37,8 @@ public class TutorialMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItem.register(modEventBus);
         Modblocks.register(modEventBus);
 
@@ -61,7 +64,17 @@ public class TutorialMod
             event.accept(Modblocks.UlTIMATUM_BLOCK);
             event.accept(Modblocks.RAW_UlTIMATUM);
             event.accept(Modblocks.RAW_ATHERNIA_BLOCK);
+            event.accept(Modblocks.RAW_INFURNIUM_ORE);
+            event.accept(Modblocks.SUSPICIOUS_STONE);
         }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItem.Parsnip);
+
+        }
+//        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+//            event.accept(ModItem.Scoped_Crossbow);
+//        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -69,7 +82,9 @@ public class TutorialMod
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+
+
+        // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent

@@ -1,6 +1,8 @@
 package net.burned_bisquick.tutorial_mod_21.Item;
 
 import net.burned_bisquick.tutorial_mod_21.TutorialMod;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +25,22 @@ public class ModItem {
 
     public static final RegistryObject<Item> Ultimatum_Ingot = ITEMS.register("ultimatum_ingot",
             () -> new Item(new Item.Properties()));
+
+//    public static final RegistryObject<Item> Void_Berries = ITEMS.register("void_berries",
+//            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> Parsnip = ITEMS.register("parsnip",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.3f)
+                            .build())
+
+
+                    ));
+
+//    public static final RegistryObject<Item> Scoped_Crossbow = ITEMS.register("scoped_crossbow",
+//            () -> new CrossbowItem(new Item.Properties().durability(640)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

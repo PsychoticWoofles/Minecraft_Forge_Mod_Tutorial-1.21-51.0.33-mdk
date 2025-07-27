@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.8,
+  "group": "athernia_ingot",
+  "ingredient": {
+    "item": "tutorialmod:athernia"
+  },
+  "result": {
+    "id": "tutorialmod:athernia_ingot"
+}
+
+
+
+
+}

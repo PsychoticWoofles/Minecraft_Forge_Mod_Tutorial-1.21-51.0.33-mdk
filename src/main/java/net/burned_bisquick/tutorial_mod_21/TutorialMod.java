@@ -58,6 +58,8 @@ public class TutorialMod
             event.accept(ModItem.Athernia_Ingot);
             event.accept(ModItem.Ultimatum_Nugget);
             event.accept(ModItem.Ultimatum_Ingot);
+            event.accept(ModItem.INFURNIUM_ORE);
+            event.accept(ModItem.MALICIOUS_ORE);
 
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

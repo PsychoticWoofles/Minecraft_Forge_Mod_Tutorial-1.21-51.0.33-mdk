@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:ultimatum_block",
+    "tutorialmod:raw_ultimatum_block",
+    "tutorialmod:raw_athernia_block",
+    "tutorialmod:raw_infurnium_ore",
+    "tutorialmod:suspicious_stone"
+  ]
+
+}

@@ -24,22 +24,22 @@ public class Modblocks {
 
     public static final RegistryObject<Block> UlTIMATUM_BLOCK = registerBlock("ultimatum_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+                    .strength(8f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> RAW_UlTIMATUM = registerBlock("raw_ultimatum_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops()));
+            () -> new DropExperienceBlock(UniformInt.of(8,16),BlockBehaviour.Properties.of()
+                    .strength(7f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> RAW_ATHERNIA_BLOCK = registerBlock("raw_athernia_block",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(2,11),BlockBehaviour.Properties.of()
                     .strength(1f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> RAW_INFURNIUM_ORE = registerBlock("raw_infurnium_ore",
-            () -> new DropExperienceBlock(UniformInt.of(6,11),BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
 
     public static final RegistryObject<Block> SUSPICIOUS_STONE = registerBlock("suspicious_stone",
-            () -> new DropExperienceBlock(UniformInt.of(6,11),BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(4,8),BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 

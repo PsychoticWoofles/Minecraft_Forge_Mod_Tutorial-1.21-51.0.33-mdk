@@ -26,6 +26,12 @@ public class ModItem {
     public static final RegistryObject<Item> Ultimatum_Ingot = ITEMS.register("ultimatum_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> INFURNIUM_ORE = ITEMS.register("infurnium_ore",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MALICIOUS_ORE = ITEMS.register("malicious_ore",
+            () -> new Item(new Item.Properties()));
+
 //    public static final RegistryObject<Item> Void_Berries = ITEMS.register("void_berries",
 //            () -> new Item(new Item.Properties()));
 

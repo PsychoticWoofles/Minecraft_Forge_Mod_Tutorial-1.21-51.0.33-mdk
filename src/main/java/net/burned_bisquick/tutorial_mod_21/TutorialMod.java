@@ -53,31 +53,34 @@ public class TutorialMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItem.Athernia);
             event.accept(ModItem.Athernia_Ingot);
             event.accept(ModItem.Ultimatum_Nugget);
             event.accept(ModItem.Ultimatum_Ingot);
             event.accept(ModItem.INFURNIUM_ORE);
             event.accept(ModItem.MALICIOUS_ORE);
-
         }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItem.CHISEL);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(Modblocks.UlTIMATUM_BLOCK);
             event.accept(Modblocks.RAW_UlTIMATUM);
             event.accept(Modblocks.RAW_ATHERNIA_BLOCK);
             event.accept(Modblocks.RAW_INFURNIUM_ORE);
             event.accept(Modblocks.SUSPICIOUS_STONE);
         }
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItem.Parsnip);
 
-        }
-//        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-//            event.accept(ModItem.Scoped_Crossbow);
-//        }
 
+        }
     }
+
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

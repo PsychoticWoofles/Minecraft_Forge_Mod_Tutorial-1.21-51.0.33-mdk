@@ -1,6 +1,8 @@
 package net.burned_bisquick.tutorial_mod_21.Item;
 
+import net.burned_bisquick.tutorial_mod_21.Item.custom.ChiselItem;
 import net.burned_bisquick.tutorial_mod_21.TutorialMod;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
@@ -31,6 +33,12 @@ public class ModItem {
 
     public static final RegistryObject<Item> MALICIOUS_ORE = ITEMS.register("malicious_ore",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(128)));
+
+
+
 
 //    public static final RegistryObject<Item> Void_Berries = ITEMS.register("void_berries",
 //            () -> new Item(new Item.Properties()));
